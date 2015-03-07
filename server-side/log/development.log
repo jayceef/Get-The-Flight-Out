@@ -18325,3 +18325,7 @@ Started POST "/index" for ::1 at 2015-03-07 10:00:17 -0800
 Processing by TripsController#index as HTML
   Parameters: {"origin"=>"SFO", "depart_time"=>"2015-03-20", "sale_total"=>"2000"}
 Completed 200 OK in 362252ms (Views: 840.9ms | ActiveRecord: 0.0ms)
+  [1m[36mTrip Load (4.7ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+  [1m[35mTrip Load (0.8ms)[0m  SELECT  "trips".* FROM "trips"  ORDER BY "trips"."id" ASC LIMIT 1
+  [1m[36mTrip Load (0.6ms)[0m  [1mSELECT  "trips".* FROM "trips"  ORDER BY "trips"."id" ASC LIMIT 1[0m
+  [1m[35mTrip Load (0.6ms)[0m  SELECT  "trips".* FROM "trips"  ORDER BY "trips"."id" ASC LIMIT 1
